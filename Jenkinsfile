@@ -19,7 +19,7 @@ environment {
     stages {
         stage('Build'){
             steps{
-                sh 'mvn package'
+                sh 'mvn -s settings.xml -Dskiptest install'
             }
         }
     }
